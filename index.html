@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        h1, h2 {
+            text-decoration: underline;
+        }
+        .rojo { color: red; }
+        .azul { color: blue; }
+        .verde { color: green; }
+        .amarillo { color: orange; }
+        .morado { color: purple; }
+    </style>
+</head>
+<body>
+    <h1 class="rojo">¡Gran Evento en la Ciudad!</h1>
+    <h2 class="azul">Resumen de la noticia</h2>
+    <ul>
+        <li>Más de 500 personas asistieron al evento.</li>
+        <li>Participaron artistas locales y nacionales.</li>
+        <li>La recaudación será destinada a obras benéficas.</li>
+    </ul>
+    <p class="verde">El evento se realizó en el parque central y contó con la presencia de familias, jóvenes y adultos.</p>
+    <p class="amarillo">La organización destacó la colaboración de los voluntarios y el apoyo de la comunidad.</p>
+    <p class="morado">Se espera que este tipo de actividades continúen impulsando la cultura y el bienestar social.</p>
+    <button onclick="mostrarAlerta()">Ver mensaje especial</button>
+    <br><br>
+    <table border="1">
+        <tr>
+            <th class="rojo">Nombre</th>
+            <th class="azul">Edad</th>
+        </tr>
+        <tr>
+            <td class="verde">Ana</td>
+            <td class="amarillo">23</td>
+        </tr>
+        <tr>
+            <td class="morado">Luis</td>
+            <td class="rojo">30</td>
+        </tr>
+    </table>
+    <script>
+        // Ejemplo de variables con let
+        let nombre = "Ana";
+        let edad = 23;
+        let mensaje = `Nombre: ${nombre}, Edad: ${edad}`;
+
+        function mostrarAlerta() {
+            alert('¡Gracias por leer la noticia!');
+            // También mostramos el mensaje con variables
+            console.log(mensaje);
+        }
+    </script>
+</body>
+</html>
